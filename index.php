@@ -46,10 +46,10 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis delectus fuga id aut ipsa nisi numquam exercitationem sunt veniam temporibus.</p>
           <a href="src/pages/signup/signup.php" class="signup">Join Us Now!!</a>
           <div class="links">
-            <a href="#" class="link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="link"><i class="fab fa-discord"></i></a>
-            <a href="#" class="link"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/xzouhair.elbazx" class="link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/xxZouhair" class="link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="link"><i class="fab fa-discord"></i> xmsfgp</a>
+            <a href="github.com/zouhairElbaz" class="link"><i class="fab fa-github"></i></a>
           </div>
         </section>
       </div>
