@@ -1,0 +1,11 @@
+@keyframes textShadow {
+    0%, 100% {
+        text-shadow: 0 0 10px var(--main-color);
+    }
+    30% {
+        text-shadow: 0 0 15px var(--main-color);
+    }
+    60% {
+        text-shadow: 0 0 5px var(--main-color);
+    }
+}

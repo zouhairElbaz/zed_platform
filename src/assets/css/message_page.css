@@ -1,0 +1,215 @@
+body {
+    padding-bottom: 0;
+    padding: 0;
+}
+.message-page {
+    width: 100%;
+    height: calc(100vh);
+}
+.message-page .container {
+    max-width: 500px;
+    height: 100%;
+    background-color: var(--dark);
+}
+.message-page .container .header {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dark2);
+    gap: 4px;
+}
+.message-page .container .header .sender-info {
+    width: calc(100% - ((4 * 40px) - 20px));
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+.message-page .container .header .sender-info .sender-pic {
+    display: inline-block;
+    padding: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--dark3);
+    position: relative;
+}
+.message-page .container .header .sender-info .sender-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.message-page .container .header .sender-info .sender-pic .status {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--success);
+    /* box-shadow: 0 0 10px var(--success); */
+    border: 2px solid var(--dark);
+    border-radius: 50%;
+}
+.message-page .container .header .sender-info .sender-pic .status.offline {
+    box-shadow: none;
+    background-color: var(--gray);
+}
+.message-page .container .header .sender-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.message-page .container .header .sender-info .sender-data {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.message-page .container .header .sender-info .sender-data .sender-name {
+    color: var(--txt);
+    font-size: 1.12 em;
+}
+.message-page .container .header .sender-info .sender-data .title {
+    color: var(--gray);
+    font-size: .8em;
+    padding: 6px 0;
+}
+.message-page .container .header .out {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.message-page .container .header .out i {
+    font-size: 1.2em;
+    color: var(--txt);
+}
+.message-page .container .header .more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+.message-page .container .header .more i {
+    display: block;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    color: var(--txt);
+}
+
+.message-page .container .messages-box {
+    width: 100%;
+    height: calc(100vh - (60px * 2 + 1px));
+    max-height: calc(100vh - (60px * 2 + 1px));
+    overflow: hidden;
+    overflow-y: auto;
+}
+.message-page .container .messages-box .msg-box {
+    margin: 10px 0;
+    padding: 10px;
+}
+.message-page .container .messages-box .msg-box.sender {
+    width: fit-content;
+    max-width: 80%;
+    border-radius: 20px 20px 20px 0;
+    background-color: var(--dark2);
+    position: relative;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.message-page .container .messages-box .msg-box.sender .info {
+    position: absolute;
+    left: -45px;
+    bottom: -10px;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    border-radius: 50%;
+    background: var(--dark2);
+}
+.message-page .container .messages-box .msg-box.sender .info img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.message-page .container .messages-box .msg-box.reciever {
+    border-radius: 20px 20px 0 20px;
+    width: fit-content;
+    max-width: 80%;
+    margin: 10px auto;
+    margin-right: 0;
+    background-color: #057ef7;
+}
+.message-page .container .messages-box .msg-box .message {
+    width: 100%;
+}
+.message-page .container .messages-box .msg-box .message .msg-content {
+    word-wrap: break-word;
+    color: var(--light);
+    font-size: .9em;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* sending msg form  */
+.message-page .container .form-area {
+    width: 100%;
+    padding: 10px 5px;
+    background-color: var(--dark2);
+
+}
+.message-page .container .form-area form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.message-page .container .form-area form input {
+    width: calc(100% - 40px);
+    height: 40px;
+    background-color: var(--dark2);
+    border: 1px solid var(--dark3);
+    padding: 10px 15px;
+    border-radius: 4px 0 0 4px;
+    color: var(--txt);
+    border-right-color: transparent;
+}
+.message-page .container .form-area form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #057ef7;
+    border: 1px solid var(--dark3);
+    border-radius: 0 4px 4px 0;
+    border-left-color: transparent;
+    cursor: not-allowed;
+    opacity: .5;
+}
+.message-page .container .form-area form button.active {
+    cursor: pointer;
+}
+.message-page .container .form-area form button i {
+    color: var(--light);
+    font-size: 1.4em;
+}
+.message-page .container .form-area form button.active {
+    opacity: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+:root {
+    --user: #ccc;
+    --staff: #f00;
+
+}
+
+
+
+.user-title.user {
+    color: var(--user);
+}
+.user-title.staff {
+    color: var(--staff);
+}

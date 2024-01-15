@@ -1,0 +1,102 @@
+.messages-section {
+    width: 100%;
+}
+.messages-section .container .app {
+    width: 100%;
+    max-width: 500px;
+}
+.messages-section .container .app .head,
+.messages-section .container .app .users-list {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid var(--dark2);
+    overflow: hidden;
+    overflow-x: auto;
+}
+.messages-section .container .head .online-friends {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.messages-section .container .app .head .online-friends .user,
+.messages-section .container .app .users-list .user .user-info .user-pic {
+    display: inline-block;
+    padding: 4px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--dark3);
+    position: relative;
+}
+.messages-section .container .app .head .online-friends .user img,
+.messages-section .container .app .users-list .user .user-info .user-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.messages-section .container .app .head .online-friends .user .status,
+.messages-section .container .app .users-list .user .user-info .user-pic .status {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--dark);
+    background-color: var(--dark);
+    border-radius: 50%;
+}
+.messages-section .container .app .head .online-friends .user .status.offline,
+.messages-section .container .app .users-list .user .user-info .user-pic .status.offline {
+    background-color: var(--gray);
+}
+.messages-section .container .app .head .online-friends .user .status.active,
+.messages-section .container .app .users-list .user .user-info .user-pic .status.active {
+    background-color: var(--success);
+}
+/* Messages list  */
+
+.messages-section .container .app .users-list {
+    max-height: 800px;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 0;
+}
+.messages-section .container .app .users-list .user {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+.messages-section .container .app .users-list .user .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.messages-section .container .app .users-list .user .user-info .user-data {
+    max-width: 100%;
+    overflow: hidden;
+}
+.messages-section .container .app .users-list .user .user-info .user-data .user-name {
+    color: var(--txt);
+    font-size: 1.2em;
+}
+.messages-section .container .app .users-list .user .user-info .user-data .last-msg {
+    color: var(--gray);
+    font-size: .8em;
+    padding: 6px 0;
+}
+.messages-section .container .app .users-list .user .date .last-msg-date {
+    font-size: .75em;
+    color: var(--gray);
+}
+.no-online-users,
+.no-users-at-all {
+    padding: 10px;
+    color: var(--error);
+}

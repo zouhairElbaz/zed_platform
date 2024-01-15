@@ -1,0 +1,10 @@
+.fcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fsbc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

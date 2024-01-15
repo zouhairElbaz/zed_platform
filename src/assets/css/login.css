@@ -1,0 +1,220 @@
+ul.phone {
+    display: none;
+}
+@media (max-width: 767px) {
+    .phone {
+    display: flex !important;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .45);
+    backdrop-filter: blur(15px);
+    justify-content: space-between;
+    align-items: center;
+    }
+    .phone li {
+        display: block;
+        width: calc(100% / 4 - 15px);
+    }
+    .phone a {
+        display: block;
+        width: 100%;
+        padding: 10px 5px;
+        text-align: center;
+        color: var(--light);
+    }
+    .page-header .container nav ul.links {
+        display: none;
+    }
+    .home-box .container .suggestions {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landing .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+}
+form h1 {
+    color: var(--light);
+    padding: 10px 0;
+    font-weight: normal;
+}
+form .error {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    background-color: var(--dark2);
+    border-left: 5px solid var(--error);
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--light);
+    display: none;
+}
+form .error .close {
+    cursor: pointer;
+    display: block;
+    padding: 5px;
+    color: var(--error);
+    font-size: 1.4em;
+}
+form .error i {
+    color: var(--error);
+    font-size: 1.3em;
+}
+form .box {
+    width: 100%;
+    margin: 15px 0;
+    position: relative;
+}
+form .box input {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--dark2);
+    padding: 12px 32px;
+    border-radius: 6px;
+    color: var(--light);
+}
+form .box input:hover {
+    border-left: 4px solid var(--main-color);
+}
+form .box .prog {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--dark3);
+    border-radius: 6px;
+    overflow: hidden;
+}
+form .box .prog .val {
+    display: block;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+form .box .prog .val.weak {
+    width: 0%;
+}
+form .box .prog .val.medium {
+    background-color: var(--error);
+    width: 30%;
+}
+form .box .prog .val.strong {
+    background-color: var(--warning);
+    width: 70%;
+}
+form .box .prog .val.vstrong {
+    background-color: var(--success);
+    width: 100%;
+}
+form .box.normal i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: var(--light);
+    opacity: .5;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+form .box.normal:hover i {
+    opacity: 1;
+    text-shadow: 0 0 5px var(--main-color);
+}
+form .box .submit {
+    color: var(--main-color);
+    border-color: var(--main-color);
+    background-color: var(--dark);
+    cursor: pointer;
+}
+form .box .submit:hover {
+    border-left-width: 1px;
+}
+form p {
+    padding: 10px 0;
+    color: var(--gray);
+}
+form p a {
+    color: var(--light);
+    font-size: 1.1em;
+}
+form p a:hover {
+    text-decoration: underline;
+}
+form .pass-info {
+    width: 100%;
+    padding: 0 0;
+    display: block;
+}
+form .pass-info ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+form .pass-info ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ccc;
+    margin: 10px auto;
+}
+form .pass-info ul li i {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #cc2312;
+    
+}
+form .pass-info ul li i.done {
+    background-color: var(--success);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
