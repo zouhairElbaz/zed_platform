@@ -43,7 +43,7 @@
       <div class="container">
         <section class="intro">
           <h1>Connect with friends and family Now!</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis delectus fuga id aut ipsa nisi numquam exercitationem sunt veniam temporibus.</p>
+          <p>Welcome TO ZED</p>
           <a href="src/pages/signup/signup.php" class="signup">Join Us Now!!</a>
           <div class="links">
             <a href="https://www.facebook.com/xzouhair.elbazx" class="link"><i class="fab fa-facebook-f"></i></a>
