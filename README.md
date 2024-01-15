@@ -1,3 +1,3 @@
 # zed_platform
 
-app link: zedapp.000webhostapp.com
+app link: https://zedapp.000webhostapp.com
