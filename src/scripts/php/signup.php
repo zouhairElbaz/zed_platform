@@ -16,7 +16,7 @@
                         $status = "active";
                         $join_date = date("Y-m-d");
                         $unique_id = rand(time(), 1000000000); // creating random and unique id for each user
-                        $sql2 = mysqli_query($conn, "INSERT INTO users (user_unique_id, user_name, user_email, user_password, user_image, user_cover, user_bio, user_age, user_gender, user_country, user_title, user_status, join_date) VALUES ('{$unique_id}', '{$name}', '{$email}', '{$password}','default_profile.jpg', 'desfault_cover.jpg', '...', 'unknown', 'unknown', 'unknown', 'User', '{$status}', '{$join_date}')");
+                        $sql2 = mysqli_query($conn, "INSERT INTO users (user_unique_id, user_name, user_email, user_password, user_image, user_cover, user_bio, user_age, user_gender, user_country, user_title, user_status, join_date) VALUES ('{$unique_id}', '{$name}', '{$email}', '{$password}','default_profile.jpg', 'default_cover.jpg', '...', 'unknown', 'unknown', 'unknown', 'User', '{$status}', '{$join_date}')");
                         if($sql2){
                             $sql3 = mysqli_query($conn, "SELECT * FROM users WHERE user_email = '{$email}'");
                             if(mysqli_num_rows($sql3) > 0){
